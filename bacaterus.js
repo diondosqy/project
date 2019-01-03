@@ -1,0 +1,2 @@
+var collapsedSize='0px';jQuery('.bacaterus').each(function(){var h=this.scrollHeight;console.log(h);var div=jQuery(this);if(h>30){div.css('height',collapsedSize);div.after('<p id="baca">Baca Selengkapnya...</p>');var link=div.next();link.click(function(e){e.stopPropagation();if(link.text()!=' '){link.text(' ');div.animate({'height':h});}else{div.animate({'height':collapsedSize});link.text('More Description...');}});}});
+
